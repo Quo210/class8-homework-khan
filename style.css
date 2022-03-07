@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my code */
+
+* {
+    box-sizing: border-box;
+}
+
+/* nav */
+
+nav {
+    height: 5vh;
+    border-bottom: 2px gray solid;
+}
+
+nav * {
+    float: left;
+    display: block;
+    height: 100%;
+}
+
+nav .dropdown {
+    width: 25%;
+    height: 5vh;
+    color: blue;
+}
+
+ol {
+    width: 35%;
+    overflow-y: hidden;
+    float: right;
+}
+
+.arrowdown {
+    font-size: 65%;
+}
+
+ol * {
+    float: left;
+}
+
+ol p {
+    height: 5vh;
+    padding: 0.5rem;
+}
+
+.search-wrapper{
+    background-color: white;
+    padding: 0.25vh 0.25vw;
+    display: inline-block;
+    line-height: 1.5rem;
+    vertical-align: center;
+}
+
+.search-wrapper p {
+    display: inline;
+    line-height: 2rem;
+    vertical-align: center;
+}
+
+input{
+    border: none;
+    background-color: whitesmoke;
+    width: 8vw;
+    padding: 0.5rem;
+    color: black;
+    font-weight: 500;
+}
+
+input::placeholder {
+    color: rgb(37, 62, 129);
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input:focus{
+    outline: none;
+}
+
+.title{
+    width: 40%;
+    margin: 0 1vw;
+}
+
+
+.wrap {
+    text-align: center;
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.wrap * {
+    margin: 0 0.25rem;
+}
+
+.title img {
+    height: 80%;
+    padding-top: 1vh 
+
+}
+
+.title h1 {
+    font-size: 115%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 1vh;
+    font-weight: 1000;
+}
+
+.user{
+    margin-top: 0.5rem;
+}
+
+.user a{
+    color: royalblue;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.25rem;
+    margin: 0 0.25rem;
+}
+
+/* main area */
+
+main {
+    min-height: 50vh;
+    height: fit-content;
+    margin: auto;
+    margin-top: 10vh;
+    width: 80vw;
+}
+
+main * {
+    width: 50%;
+    float: left;
+}
+
+.animated img{
+    min-width: 40vw;
+    width: 100%;
+    float: right;
+}
+
+article {
+    height: 100%;
+    padding: 10vh 0vh;
+}
+
+article h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+}
+
+.expand {
+    width: 100%;
+    margin-top: 3vh;
+}
+
+.expand > p {
+    display: inline-block;
+    font-size: 115%;
+    font-weight: 200;
+    width: 100%;
+    min-width: 35vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.options{
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.options a {
+    text-align: center;
+    float: left;
+    min-width: 15%;
+    width: 8vw;
+    background-color: royalblue;
+    color: white;
+    border: skyblue 1px solid;
+    text-decoration: none;
+    padding: 0.7rem;
+    border-radius: 0.21rem;
+    margin: 0 0.25rem;
+    transition: 0.25s;
+}
+
+.options a:hover {
+    background-color: darkred;
+    cursor: pointer
+}
+
+.options a:visited{
+    color: white;
+}
